@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libwavpack1
+requires: libwavpack1
 external-source: wavpack
 sdesc: "Hybrid lossless audio codec (development)"
 ldesc: "WavPack is a completely open audio compression format providing
