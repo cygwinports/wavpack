@@ -7,18 +7,18 @@ WavPack, the new version 4 format has been designed from the ground up
 to offer unparalleled performance and functionality.
 
 Runtime requirements:
-  cygwin-1.7.0-44
-  libgcc1-4.3.2-2
-  libiconv2-1.12-10
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libiconv2-1.13.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20060824-2
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-11
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.19.51-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-15
   make-3.81-2
   sed-4.1.5-2
 
@@ -31,43 +31,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack wavpack-4.50.1-X-src.tar.bz2
+  unpack wavpack-4.60.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./wavpack-4.50.1-X.cygport all
+  cygport ./wavpack-4.60.1-X.cygport all
 
 This will create:
-  /usr/src/libwavpack-devel-4.50.1-X.tar.bz2
-  /usr/src/libwavpack1-4.50.1-X.tar.bz2
-  /usr/src/wavpack-4.50.1-X-src.tar.bz2
-  /usr/src/wavpack-4.50.1-X.tar.bz2
+  /usr/src/libwavpack-devel-4.60.1-X.tar.bz2
+  /usr/src/libwavpack1-4.60.1-X.tar.bz2
+  /usr/src/wavpack-4.60.1-X-src.tar.bz2
+  /usr/src/wavpack-4.60.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(wavpack)
-  /usr/bin/wavpack.exe
-  /usr/bin/wvgain.exe
-  /usr/bin/wvunpack.exe
-  /usr/share/doc/wavpack/ChangeLog
-  /usr/share/doc/wavpack/LICENSE.txt
-  /usr/share/doc/wavpack/README
-
-(libwavpack1)
-  /usr/bin/cygwavpack-1.dll
-
-(libwavpack-devel)
-  /usr/include/wavpack/wavpack.h
-  /usr/lib/libwavpack.a
-  /usr/lib/libwavpack.dll.a
-  /usr/lib/libwavpack.la
-  /usr/lib/pkgconfig/wavpack.pc
-
-------------------
-
 Port Notes:
+
+----- version 4.60.1-1 -----
+Version bump.
 
 ----- version 4.50.1-10 -----
 Initial release for Cygwin 1.7.
