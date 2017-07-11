@@ -1,5 +1,5 @@
 NAME="wavpack"
-VERSION=4.60.1
+VERSION=5.1.0
 RELEASE=1
 CATEGORY="Audio"
 SUMMARY="Hybrid lossless audio codec"
@@ -15,5 +15,3 @@ PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-devel"
 wavpack_CONTENTS='usr/bin/*.exe usr/share/'
 libwavpack1_CONTENTS="usr/bin/*-1.dll"
 libwavpack_devel_CONTENTS='usr/include/ usr/lib/'
-
-CYGCONF_ARGS="--enable-mmx"
