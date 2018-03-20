@@ -1,6 +1,6 @@
 NAME="wavpack"
 VERSION=5.1.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio"
 SUMMARY="Hybrid lossless audio codec"
 DESCRIPTION="WavPack is a completely open audio compression format providing
@@ -10,6 +10,11 @@ WavPack, the new version 4 format has been designed from the ground up
 to offer unparalleled performance and functionality."
 HOMEPAGE="http://www.wavpack.com/"
 SRC_URI="http://www.wavpack.com/${NAME}-${VERSION}.tar.bz2"
+PATCH_URI="
+	https://src.fedoraproject.org/cgit/rpms/wavpack.git/plain/wavpack-0001-issue-27-do-not-overwrite-stack-on-corrupt-RF64-file.patch
+	https://src.fedoraproject.org/cgit/rpms/wavpack.git/plain/wavpack-0002-issue-28-do-not-overwrite-heap-on-corrupt-DSDIFF-fil.patch
+	https://src.fedoraproject.org/cgit/rpms/wavpack.git/plain/wavpack-0003-issue-28-fix-buffer-overflows-and-bad-allocs-on-corr.patch
+"
 
 PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-devel"
 wavpack_CONTENTS='usr/bin/*.exe usr/share/'
